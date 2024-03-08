@@ -136,6 +136,7 @@ export default App;
 const AppWrapper = styled.div`
   margin: 0 auto;
   max-width: 800px;
+  height: 100vh;
   padding: 50px 20px;
 `
 const InputsWrapper = styled.div`

@@ -7,11 +7,11 @@ const SelectField = ({ title, name, onChange }) => {
   return (
     <LabelSelect>
       <TitleSelect>{ title }</TitleSelect>
-      <select name={ name } onChange={ onChange }>
+      <Select name={ name } onChange={ onChange }>
         {options.map(option => (
           <option key={option.key} value={option.value}>{option.text}</option>
         ))}
-      </select>
+      </Select>
     </LabelSelect>
   )
 }
@@ -26,4 +26,8 @@ const TitleSelect = styled.p`
 const LabelSelect = styled.label`
   display: block;
   text-align: center;
+`
+
+const Select = styled.select`
+  background-color: inherit;
 `
